@@ -1,9 +1,9 @@
  body {
-            background-color:cadetblue;
+            background-color:rgb(233, 172, 202);
         }
             h1 {
-                color: rgb(248, 248, 161);
-                font-family: helvetica;
+                color: rgb(255, 254, 243);
+                font-family: "Syne Mono", monospace;
                 font-size: 50px;
             }
             h1:hover {
@@ -11,7 +11,7 @@
             }
             h2 {
                 color: rgb(248, 248, 161);
-                font-family: helvetica;
+                font-family: "Syne Mono", monospace;
                 font-size: 50px;
             }
             p {
@@ -27,28 +27,52 @@
             #italics {
                 font-style: italic;
             }
-.footer {
+.footer 
                 color:rgba(0, 255, 170, 0.935);
                 font-family: helvetica;
                 font-size: 25px;
                 
-  
-
+  .syne-mono-regular {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
+
+
 button {
-    color:black;
+    background-color:rgb(255, 94, 159);
+    color:aliceblue
     text-align: center;
     font-family: helvetica;
     font-size: 30px;
     align-items: center;
+    border-radius: 30px;
+    padding: 10px 20px;
+    align-items: center;
+    border: none;
+
+
 }
+
 button:hover {
     color: red;
+    cursor: grab;
 }
-          
+
+img {
+    width: 300px;
+    height:300px;
+    align-items: center;
+    
+}
 img:hover {
     transform: scale(0.9);
 }
 ul {
     list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color:antiquewhite;
+
 }
