@@ -4,20 +4,24 @@
             h1 {
                 color: rgb(255, 254, 243);
                 font-family: "Syne Mono", monospace;
-                font-size: 50px;
-            }
+            
+                font-size: 50px; }
+            
             h1:hover {
                 color: white;
             }
             h2 {
                 color: rgb(248, 248, 161);
                 font-family: "Syne Mono", monospace;
+                font-weight: 400;
                 font-size: 50px;
             }
             p {
                 color:floralwhite;
                 font-family: helvetica;
+                font-weight: 400;
                 font-size: 25px;
+                line-height: 1.5;
                 
 
             }
@@ -27,10 +31,10 @@
             #italics {
                 font-style: italic;
             }
-.footer 
+.footer {
                 color:rgba(0, 255, 170, 0.935);
                 font-family: helvetica;
-                font-size: 25px;
+                font-size: 25px; }
                 
   .syne-mono-regular {
   font-family: "Syne Mono", monospace;
@@ -41,7 +45,7 @@
 
 button {
     background-color:rgb(255, 94, 159);
-    color:aliceblue
+    color:aliceblue;
     text-align: center;
     font-family: helvetica;
     font-size: 30px;
