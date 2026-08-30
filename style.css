@@ -20,7 +20,7 @@
                 color:floralwhite;
                 font-family: helvetica;
                 font-weight: 400;
-                font-size: 25px;
+                font-size: 15px;
                 line-height: 1.5;
                 
 
@@ -34,7 +34,7 @@
                 font-family: helvetica;
                 font-size: 25px; }
                 
-  .syne-mono-regular {
+ .syne-mono-regular {
   font-family: "Syne Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -50,14 +50,15 @@ button {
     align-items: center;
     border-radius: 30px;
     padding: 10px 20px;
-    align-items: center;
     border: none;
+    margin: 20px;
 
 
 }
 
 button:hover {
-    color: red;
+    background-color: rgb(41, 41, 41);
+    color: rgb(229, 255, 0);
     cursor: grab;
 }
 
@@ -68,7 +69,8 @@ img {
     
 }
 img:hover {
-    transform: scale(0.9);
+    transform: scale(0.999);
+    opacity: 0.9;
 }
 ul {
     list-style-type: none;
@@ -81,4 +83,7 @@ a {
 ::selection {
     background-color: rgb(200, 255, 0);
     color: rgb(200, 0, 0);
+}
+.my-container {
+    width: 50rem;
 }
