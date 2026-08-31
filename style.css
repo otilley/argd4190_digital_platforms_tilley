@@ -3,21 +3,30 @@
         }
             h1 {
                 color: rgb(255, 234, 4);
-                font-family: "Syne Mono", monospace;
-            
-                font-size: 50px; }
+                font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 2px;
+                font-size: 59px; 
+                font-weight: 600;
+            }
             
             h1:hover {
                 color: rgb(255, 234, 4);
             }
             h2 {
                 color: rgb(255, 234, 4);
-                font-family: "Syne Mono", monospace;
+                font-family: 'Courier New', Courier, monospace;
                 font-weight: 400;
                 font-size: 50px;
             }
+            h3 {
+                color: rgb(255, 234, 4);
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 400;
+                font-size: 40px;
+                font-style: italic;
+            }
             p {
-                color:floralwhite;
+                color:#FFFFFF;
                 font-family: helvetica;
                 font-weight: 400;
                 font-size: 15px;
@@ -87,3 +96,5 @@ a {
 .my-container {
     width: 50rem;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Syne+Mono&display=swap');
