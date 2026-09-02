@@ -151,7 +151,7 @@ a {
     align-content: center;
     grid-template-areas:
         "nav nav nav"
-        "main main side"
+        "side main side"
         "footer footer footer";
 }
 .main-nav{
@@ -173,6 +173,7 @@ justify-items: center;
   .side {
     grid-area: side;
     min-height: 200px;
+    
 
   }          
   .sectiony {
