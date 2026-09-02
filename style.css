@@ -5,8 +5,11 @@
                 color: rgb(255, 234, 4);
                 font-family: 'Courier New', Courier, monospace;
             letter-spacing: 2px;
-                font-size: 3rem; /* 59px */ 
+            
                 font-weight: 600;
+                @media screen and (min-width: 768px) {
+                    font-size: 3rem; /* 59px */
+                } /* end @media */
             }
             
             h1:hover {
@@ -16,7 +19,10 @@
                 color: rgb(255, 234, 4);
                 font-family: 'Courier New', Courier, monospace;
                 font-weight: 400;
-                font-size: 2rem; /* 50px */
+                font-size: 3rem; /* 50px */
+                @media screen and (min-width: 768px) {
+                    font-size: 3rem; /* 50px */
+                } /* end @media */
             }
             h3 {
                 color: rgb(255, 234, 4);
@@ -24,6 +30,9 @@
                 font-weight: 400;
                 font-size: 2rem; /* 40px */
                 font-style: italic;
+                @media screen and (min-width: 768px) {
+                    font-size: 2rem; /* 40px */
+                } /* end @media */
             }
             p {
                 color:#FFFFFF;
@@ -32,6 +41,9 @@
                 font-size: 15px;
                 line-height: 1.5;
                 text-indent: 20px;
+                @media screen and (min-width: 768px) {
+                    font-size: 15px;
+                } /* end @media */ 
 
             }
             
@@ -61,6 +73,9 @@ button {
     padding: 10px 20px;
     border: none;
     margin: 20px;
+    @media screen and (min-width: 768px) {
+        font-size: 2rem; /* 30px */
+    } /* end @media */
 
 
 }
@@ -77,6 +92,10 @@ img {
     align-items: center;
     margin: 20px;
     border-radius: 20px;
+    @media screen and (min-width: 768px) {
+        width: 2rem; /* 300px */
+        height: 2rem; /* 300px */
+    } /* end @media */
     
 }
 img:hover {
@@ -96,7 +115,7 @@ a {
     color: rgb(200, 0, 0);
 }
 .my-container {
-    width: 50rem;
+    width: 10rem;
     display: flex;
     flex-direction:column;
 
