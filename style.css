@@ -5,7 +5,8 @@
                 color: rgb(255, 234, 4);
                 font-family: 'Courier New', Courier, monospace;
             letter-spacing: 2px;
-            
+                font-size: var(--font-size-h1);
+                font-size: 3rem; /* 59px */
                 font-weight: 600;
                 @media screen and (min-width: 768px) {
                     font-size: 3rem; /* 59px */
@@ -18,8 +19,9 @@
             h2 {
                 color: rgb(255, 234, 4);
                 font-family: 'Courier New', Courier, monospace;
-                font-weight: 400;
+                font-weight: 600;
                 font-size: 3rem; /* 50px */
+                
                 @media screen and (min-width: 768px) {
                     font-size: 3rem; /* 50px */
                 } /* end @media */
@@ -27,8 +29,8 @@
             h3 {
                 color: rgb(255, 234, 4);
                 font-family: 'Courier New', Courier, monospace;
-                font-weight: 400;
                 font-size: 2rem; /* 40px */
+                font-weight: 400;
                 font-style: italic;
                 @media screen and (min-width: 768px) {
                     font-size: 2rem; /* 40px */
@@ -38,11 +40,11 @@
                 color:#FFFFFF;
                 font-family: helvetica;
                 font-weight: 400;
-                font-size: 15px;
+                font-size: var(--font-size-p);
                 line-height: 1.5;
-                text-indent: 20px;
+                text-align: left;
                 @media screen and (min-width: 768px) {
-                    font-size: 15px;
+                    font-size: var(--font-size-p);
                 } /* end @media */ 
 
             }
@@ -92,9 +94,9 @@ img {
     align-items: center;
     margin: 20px;
     border-radius: 20px;
-    @media screen and (min-width: 768px) {
-        width: 2rem; /* 300px */
-        height: 2rem; /* 300px */
+    @media screen and (min-width: 728px) and (max-width: 100%) {
+        width: 10rem; /* 300px */
+        height: 10rem; /* 300px */
     } /* end @media */
     
 }
@@ -117,9 +119,17 @@ a {
 .my-container {
     width: 10rem;
     display: flex;
-    flex-direction:column;
+    flex-direction:column; 
+    column-gap: 20px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
 
     margin:auto;
+}
+.main-nav{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Syne+Mono&display=swap');
