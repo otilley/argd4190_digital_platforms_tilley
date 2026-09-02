@@ -43,12 +43,13 @@
             }
             h4 {
                 color: var(--primary-color);
-                opacity:0;
+                opacity:1;
                 font-family: helvetica, sans-serif;
                 font-size: 6rem; /* 80px */
                 font-weight: 600;
                 text-align: center;
                 margin: 5rem;
+                word-spacing: 2.5rem;
             
                 
             
@@ -199,22 +200,73 @@ justify-items: center;
 
 
   }          
-  .sectiony {
+
+    .sectiony {
     background-color: var(--secondary-color);
     margin: 0;
-    padding: .1rem;
+    padding: 0.1rem;
     border: none;
-    align-items: center;
-                justify-content: center;
-                place-items: center;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-areas:
-                    "header header header"
-                    "main main side"
-                    "footer footer footer";
+    overflow: hidden;
+}
 
-            
-  }
+.sectiony {
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 4rem 0;
+    border: none;
+    overflow: hidden;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 6rem; /* 30px */
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.emoticons {
+    display: flex;
+    width: max-content;
+    animation: emoticons 30s linear infinite;
+}
+
+.emoticon-set {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding-right: 0;
+}
+
+@keyframes emoticons {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+}
+
+    @media screen and (max-width: 768px) {
+        .sectiony {
+            grid-template-areas:
+                "header"
+                "main"
+                "side"
+                "footer";
+
+            justify-items: center;
+        }
+    }
+
+    @keyframes emoticons {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(100%);
+        }
+    }
+  
 
 @import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Syne+Mono&display=swap');
 @media screen and (max-width: 768px) {
