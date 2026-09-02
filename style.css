@@ -135,11 +135,11 @@ a {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 2rem;
     row-gap: 0.5rem;
     justify-content: center;
-    justify-items: flex-end;
+    justify-items: center;
     min-height: 200px;
     align-content: center;
     grid-template-areas:
@@ -163,6 +163,18 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-content: center;
     justify-items: center;
+}
+
+.return-nav{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-content: center;
+    justify-items: center;
+    text-decoration: none;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin: 1rem 0  1rem 0;
 }
 
 .main {
@@ -280,6 +292,10 @@ a {
         font-size: 3rem;
         padding: 2rem 0;
     }
+   .return-nav {
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 1rem;
+        gap: 1rem;
+    }
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Syne+Mono&display=swap');
