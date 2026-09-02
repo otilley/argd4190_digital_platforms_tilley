@@ -5,7 +5,7 @@
                 color: rgb(255, 234, 4);
                 font-family: 'Courier New', Courier, monospace;
             letter-spacing: 2px;
-                font-size: 59px; 
+                font-size: 3rem; /* 59px */ 
                 font-weight: 600;
             }
             
@@ -16,13 +16,13 @@
                 color: rgb(255, 234, 4);
                 font-family: 'Courier New', Courier, monospace;
                 font-weight: 400;
-                font-size: 50px;
+                font-size: 2rem; /* 50px */
             }
             h3 {
                 color: rgb(255, 234, 4);
                 font-family: 'Courier New', Courier, monospace;
                 font-weight: 400;
-                font-size: 40px;
+                font-size: 2rem; /* 40px */
                 font-style: italic;
             }
             p {
@@ -55,7 +55,7 @@ button {
     color:aliceblue;
     text-align: center;
     font-family: helvetica;
-    font-size: 30px;
+    font-size: 2rem; /* 30px */
     align-items: center;
     border-radius: 30px;
     padding: 10px 20px;
@@ -97,6 +97,10 @@ a {
 }
 .my-container {
     width: 50rem;
+    display: flex;
+    flex-direction:column;
+
+    margin:auto;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Syne+Mono&display=swap');
