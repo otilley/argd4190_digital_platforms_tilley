@@ -163,6 +163,12 @@ a {
         "nav nav nav"
         "side main side"
         "footer footer footer";
+        @media screen and (max-width: 768px) {
+            grid-template-areas: "nav" 
+                                    "main" 
+                                    "side" 
+                                    "footer";
+        }
 }
 .main-nav{
 display: grid;
