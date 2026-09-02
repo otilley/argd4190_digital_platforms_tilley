@@ -43,13 +43,23 @@
             }
             h4 {
                 color: var(--primary-color);
-                font-family: helvetica, sans-serifs;
-                font-size: 5rem; /* 60px */
+                opacity:0;
+                font-family: helvetica, sans-serif;
+                font-size: 6rem; /* 80px */
                 font-weight: 600;
+                text-align: center;
+                margin: 5rem;
+            
+                
             
                 @media screen and (min-width: 768px) {
-                    font-size: 5rem; /* 60px */
+                    font-size: 6rem; /* 80px */
                 } /* end @media */
+            }
+            h4:hover {
+                opacity: 1;
+                transition: opacity 0.3s ease;
+                color: var(--primary-color);
             }
             p {
                 color:#FFFFFF;
@@ -166,14 +176,21 @@ justify-items: center;
     min-height: 200px;
 }
 .footer {
-                color:var(--secondary-color), 0.5);
-                font-family: helvetica;
-                font-size: 25px; }
+    color: var(--secondary-color);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+    align-content: end;
+justify-items: center;
+    min-height: 200px;
+    grid-area: footer;}
                 
   .side {
     grid-area: side;
     min-height: 200px;
-    
+
 
   }          
   .sectiony {
@@ -189,6 +206,8 @@ justify-items: center;
                     "header header header"
                     "main main side"
                     "footer footer footer";
+
+            
   }
 
 @import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Syne+Mono&display=swap');
