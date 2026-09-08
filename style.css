@@ -370,8 +370,15 @@ li {
         gap: 1rem;
     }
      .carousel img {
-        width: 30rem;
-        height: 30rem;
+        width: 70vw;
+        height: 70vw;
+        max-width: 18rem;
+        max-height: 18rem;
+    }
+
+    .carousel-set {
+        gap: 1rem;
+        padding-right: 1rem;
     }
 }
 
