@@ -173,10 +173,18 @@ a {
 
 .irlimage p,
 .irlimage h3 {
+    width: min(90%, 30rem);
+    margin: 1rem auto;
     text-align: left;
-    max-width: 30rem;
-    margin: 1rem auto; 
-
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+    .irlimage p,
+    .irlimage h3 {
+        width: 90%;
+        margin: 1rem auto;
+        text-align: left;
+    }
 }
 
 .purpose,
@@ -334,9 +342,18 @@ li {
         font-size: 1rem;
     }
 
-    img {
-        width: 30rem;
-        height: 30rem;
+
+        .container li {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .container li img {
+        width: min(55vw, 9rem);
+        height: min(55vw, 9rem);
+        margin: 1.5rem;
     }
 
     .container {
@@ -382,6 +399,7 @@ li {
         gap: 1rem;
         padding-right: 1rem;
     }
+   
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Syne+Mono&display=swap');
