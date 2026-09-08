@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Syne+Mono&display=swap');
 :root {
     --primary-color: rgb(237, 32, 32);
     --secondary-color: rgb(229, 255, 0);
@@ -100,9 +101,6 @@ button:hover {
 }
 
 img {
-    width: 300px;
-    height: 300px;
-    margin: 30px;
     border-radius: 20px;
 }
 
@@ -152,7 +150,7 @@ a {
 
 .irlimage {
     display:grid;
-    grid-template-rows: repeat(auto-fit);
+    grid-template-rows: auto;
     row-gap: 1rem;
     justify-content: center;
     justify-items: center;
@@ -314,6 +312,8 @@ li {
     border-radius: 20px;
 }
 
+
+
 @keyframes carousel-loop {
     from {
         transform: translateX(0);
@@ -387,6 +387,7 @@ li {
         grid-template-columns: repeat(4, 1fr);
         font-size: 1rem;
         gap: 1rem;
+        margin: 1rem 1rem 1rem 1rem;
     }
      .carousel img {
         width: 70vw;
@@ -401,5 +402,3 @@ li {
     }
    
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Syne+Mono&display=swap');
