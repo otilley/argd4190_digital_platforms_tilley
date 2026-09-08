@@ -333,8 +333,8 @@ li {
     }
 
     img {
-        width: 150px;
-        height: 150px;
+        width: 30rem;
+        height: 30rem;
     }
 
     .container {
@@ -370,8 +370,8 @@ li {
         gap: 1rem;
     }
      .carousel img {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 30rem;
+        height: 30rem;
     }
 }
 
