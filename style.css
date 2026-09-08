@@ -100,7 +100,7 @@ button:hover {
 img {
     width: 300px;
     height: 300px;
-    margin: 20px;
+    margin: 30px;
     border-radius: 20px;
 }
 
@@ -148,6 +148,35 @@ a {
         "footer footer footer";
 }
 
+.irlimage {
+    display:grid;
+    grid-template-rows: repeat(auto-fit);
+    row-gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+    min-height: 200px;
+    align-content: center;
+    text-align:center;
+    box-sizing: border-box;
+}
+.irlimage img {
+    width: 25rem;
+    height: 25rem;
+    margin: 3rem 0 1.5rem 0;
+    border-radius: 20px;
+}
+.irlimage img:hover {
+    opacity: 1;
+}
+
+.irlimage p,
+.irlimage h3 {
+    text-align: left;
+    max-width: 30rem;
+    margin: 1rem auto; 
+
+}
+
 .purpose,
 .emoticons-info,
 .about {
@@ -193,8 +222,14 @@ a {
     justify-items: center;
     min-height: 200px;
     grid-area: footer;
+    margin: 2rem 0 1rem 0;
 }
+li {
+    list-style-type: none;
+    margin: 1rem 0 1em 0;
+    
 
+}
 .side {
     grid-area: side;
     min-height: 200px;
@@ -240,6 +275,43 @@ a {
 
 .red {
     color: rgb(237, 32, 32);
+}
+
+.carousel {
+    width: 100vw;
+    margin: 2rem 0 ;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: carousel-loop 30s linear infinite;
+}
+
+.carousel-set {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+
+.carousel img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 20px;
+}
+
+@keyframes carousel-loop {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -296,6 +368,10 @@ a {
         grid-template-columns: repeat(4, 1fr);
         font-size: 1rem;
         gap: 1rem;
+    }
+     .carousel img {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
 
