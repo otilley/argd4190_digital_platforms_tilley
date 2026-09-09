@@ -250,8 +250,8 @@ li {
 
 .sectiony {
     background-color: var(--secondary-color);
-    margin: 10rem 0 0 5rem;
-    padding: 4rem 0;
+    margin: 10rem 0 0;
+    padding: 4rem ;
     border: none;
     text-align: center;
     font-family: "Courier New", Courier, monospace;
