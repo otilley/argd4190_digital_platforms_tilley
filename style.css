@@ -13,13 +13,9 @@ h1 {
     color: rgb(229, 255, 0);
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 2px;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
     margin: 4rem 0 4rem 0;
-}
-
-h1:hover {
-    color: var(--secondary-color);
 }
 
 h2 {
@@ -330,15 +326,17 @@ li {
 
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 4rem;
+        font-size: clamp(2rem, 8vw, 3rem);
+        margin: 2rem 1rem;
+        text-align: center;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: clamp(2rem, 8vw, 3rem);
     }
 
     h3 {
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 5vw, 2rem);;
     }
 
     h4 {
