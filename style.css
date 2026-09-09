@@ -153,7 +153,7 @@ a {
 .container li img {
     display: grid;
     grid-template-columns: auto;
-    width: clamp(9rem, 30vw, 18rem);
+    width: clamp(7rem, 20vw, 14rem);
     height: auto;
     aspect-ratio: 1;
     object-fit: cover;
@@ -364,7 +364,7 @@ li {
     }
 
      .container li img {
-        width: clamp(7rem, 30vw, 10rem);
+        width: clamp(6rem, 28vw, 10rem);
         height: auto;
         margin: 1rem auto;
     }
