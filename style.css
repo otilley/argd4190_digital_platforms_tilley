@@ -150,10 +150,18 @@ a {
         "side main side"
         "footer footer footer";
 }
+.container li {
+    min-width: 0;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
 .container li img {
     display: grid;
-    grid-template-columns: auto;
-    width: min(75vw, 30rem);
+    width: 100%;
+    max-width: 30rem;
     height: auto;
     aspect-ratio: 1;
     object-fit: cover;
@@ -363,9 +371,9 @@ li {
         margin: 0;
     }
 
-     .container li img {
-        width: min(75vw, 12rem);
-        height: auto;
+       .container li img {
+        width: 75vw;
+        max-width: 12rem;
         margin: 1rem auto;
     }
 
