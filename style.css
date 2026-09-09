@@ -80,10 +80,10 @@ button {
     text-align: center;
     font-family: helvetica;
     font-size: 2rem;
-    border-radius: 30px;
+    border-radius: 3rem;
     padding: 10px 20px;
     border: none;
-    margin: 20px;
+    margin: 2rem;
 }
 
 button:hover {
@@ -94,9 +94,12 @@ button:hover {
 
 @media screen and (max-width: 768px) {
     button {
-        font-size: 1rem;
+         font-size: 1rem;
         padding: 6px 12px;
         margin: 5px;
+        width: clamp(5rem, 5vw, 8rem);
+        height: auto;
+        
     }
 }
 
@@ -147,6 +150,16 @@ a {
         "side main side"
         "footer footer footer";
 }
+.container li img {
+    display: grid;
+    grid-template-columns: auto;
+    width: clamp(8rem, 35vw, 20rem);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    margin: 1rem auto;
+}
+
 
 .irlimage {
     display:grid;
@@ -350,10 +363,10 @@ li {
         margin: 0;
     }
 
-    .container li img {
-        width: min(55vw, 9rem);
-        height: min(55vw, 9rem);
-        margin: 1.5rem;
+     .container li img {
+        width: clamp(10rem, 35vw, 15rem);
+        height: auto;
+        margin: 1rem auto;
     }
 
     .container {
