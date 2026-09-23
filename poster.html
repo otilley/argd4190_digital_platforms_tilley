@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive poster</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="poster-page">
+    <section class="poster-editor">
+    
+    
+        <h1> create an interactive poster</h1>
+
+        <section class="poster-workspace" aria-label="Text poster editor">
+            <div class="poster-controls">
+                <label for="poster-title">title</label>
+                <textarea id="poster-title" rows="2" maxlength="120" placeholder="type a title...">:D hello!</textarea>
+
+                <label for="poster-body">body text</label>
+                <textarea id="poster-body" rows="5" maxlength="500" placeholder="type your body text...">welcome to my poster!</textarea>
+
+                <label for="font-choice">font</label>
+                <select id="font-choice">
+                    <option value="Courier New">Courier New</option>
+                    <option value="Syne Mono">Syne Mono</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Trebuchet MS">Trebuchet MS</option>
+                </select>
+
+                <div class="size-label">
+                    <label for="font-size">text size</label>
+                    <output id="font-size-value" for="font-size">72px</output>
+                </div>
+                <input id="font-size" type="range" min="24" max="160" value="72">
+                <div class="shape-controls">
+                    <label class="circle-toggle" for="circle">
+                        <input id="circle" type="checkbox">
+                        show circle
+                    </label>
+                    <label for="circle-scale">circle scale</label>
+                    <input id="circle-scale" type="range" min="0.1" max="3" step="0.1" value="1">
+                    <input id="circle-color" type="color" value="#ffff00">
+                    <output id="circle-color-output" for="circle-color"></output>
+                    <label for="circle-x">circle x</label>
+                    <input id="circle-x" type="range" min="-800" max="200" value="100">
+                    <label for="circle-y">circle y</label>
+                    <input id="circle-y" type="range" min="-400" max="800" value="110">
+                </div>
+                <div class="shape-controls">
+                    <label class="square-toggle" for="square">
+                        <input id="square" type="checkbox" checked>
+                        show square
+                    </label>
+                    <label for="sqaure-scale">square scale</label>
+                    <input id="square-scale" type="range" min="0.1" max="3" step="0.1" value="1">
+                    <input id="square-color" type="color" value="#ffff00">
+                    <output id="square-color-output" for="square-color"></output>
+                    <label for="square-x">square x</label>
+                    <input id="square-x" type="range" min="-800" max="200" value="100">
+                    <label for="square-y">square y</label>
+                    <input id="square-y" type="range" min="-400" max="800" value="110">
+                </div>
+            </div>
+
+            <div class="poster-preview" aria-live="polite">
+                <div class="poster-circle" aria-hidden="true"></div>
+                <div class="poster-square" aria-hidden="true"></div>
+                <h2 id="poster-preview-title">:D hello!</h2>
+                <p id="poster-preview-body">welcome to my poster!</p>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

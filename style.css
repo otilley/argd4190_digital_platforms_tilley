@@ -324,6 +324,157 @@ li {
     }
 }
 
+.poster-page {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 2rem clamp(1rem, 5vw, 5rem);
+    color: black;
+    background: white;
+}
+
+.poster-editor {
+    width: min(100%, 90rem);
+    margin: 0 auto;
+}
+
+
+
+.poster-type {
+    margin: 7rem 0 0.5rem;
+    color: black;
+    font-family: helvetica;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.poster-editor h1 {
+    margin: 0 0 2rem;
+    text-align: left;
+    font-family: helvetica;
+    color:black
+}
+
+.poster-editor p {
+ margin: 0 0 2rem;
+    text-align: left;
+    font-family: helvetica;
+}
+
+.poster-workspace {
+    display: grid;
+    grid-template-columns: minmax(15rem, 22rem) 1fr;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.poster-controls {
+    display: grid;
+    align-content: start;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background: white;
+    color: black;
+}
+
+.poster-controls label,
+.size-label {
+    font-family: helvetica;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.poster-controls textarea,
+.poster-controls select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 2;
+    padding: 0.75rem;
+    color: black;
+    background: rgb(190, 190, 190);
+    font: 1rem/1.4 helvetica;
+}
+
+.poster-controls textarea {
+    resize: vertical;
+    min-height: 7rem;
+}
+
+.poster-controls input[type="range"] {
+    width: 100%;
+    accent-color: black;
+}
+
+.size-label {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.poster-preview {
+    display: grid;
+    position: relative;
+    min-height: 50rem;
+    place-items: center;
+    overflow: hidden;
+    padding: 2rem;
+    background: white;
+    color: black;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
+
+.poster-circle {
+    position: absolute;
+    top: 12%;
+    right: 10%;
+    width: clamp(8rem, 25%, 18rem);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--primary-color);
+    opacity: 1;
+}
+.poster-square {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: clamp(8rem, 25%, 18rem);
+    aspect-ratio: 1;
+    border-radius: 0;
+    background: var(--primary-color);
+    opacity: 1;
+}
+
+.poster-circle[hidden] {
+    display: none;
+}
+.poster-square[hidden] {
+    display: none;
+}
+.poster-preview h2,
+.poster-preview p {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    margin: 0;
+    overflow-wrap: anywhere;
+    color: inherit;
+    font-family: helvetica;
+    font-size: 72px;
+    line-height: 1;
+    text-align: center;
+}
+
+.poster-preview h2 {
+    font-size: 72px;
+}
+
+.poster-preview p {
+    font-size: 36px;
+}
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: clamp(2rem, 8vw, 3rem);
@@ -389,6 +540,26 @@ li {
         font-size: 3rem;
         padding: 2rem 0;
         margin: 10rem 0 6rem;
+    }
+
+    .poster-page {
+        padding: 1rem;
+    }
+
+    .poster-kicker {
+        margin-top: 4rem;
+    }
+
+    .poster-editor h1 {
+        font-size: clamp(2rem, 10vw, 3.5rem);
+    }
+
+    .poster-workspace {
+        grid-template-columns: 1fr;
+    }
+
+    .poster-preview {
+        min-height: 16rem;
     }
    .return-nav {
         grid-template-columns: repeat(4, 1fr);
